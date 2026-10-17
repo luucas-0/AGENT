@@ -322,5 +322,5 @@ Pasos a seguir:
 # ==========================================
 
 if __name__ == "__main__":
-    # Ejecuta el servidor MCP sobre transporte estándar stdio
-    mcp.run()
+    # Ejecuta el servidor MCP sobre transporte web SSE
+    mcp.run(transport='sse', host='0.0.0.0', port=8000)
